@@ -1,0 +1,554 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1683057110420703, "dur":1896, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057110422614, "dur":144, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1683057110422820, "dur":29, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1683057110422849, "dur":393, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1683057110423276, "dur":964, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057110424240, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541196, "dur":227, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541423, "dur":149, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541572, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541579, "dur":22, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541601, "dur":27, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541628, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541642, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541646, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541657, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541660, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541672, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541675, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541687, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541690, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541701, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541705, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541718, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541743, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114541787, "dur":3782, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1683057110423429, "dur":820, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057110424252, "dur":7779, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057110432052, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683057110432065, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057110433588, "dur":1263, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683057110434862, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683057110434934, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057110435206, "dur":14702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683057110449910, "dur":14397, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1683057110464312, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057110464328, "dur":2211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1683057110466596, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1683057110466761, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057110466775, "dur":393134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1683057110859974, "dur":31785, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057110891766, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057110891780, "dur":1571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057110893407, "dur":123647, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111017059, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057111017072, "dur":4371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111021510, "dur":104069, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111125587, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057111125601, "dur":111772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111237427, "dur":203373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111440806, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057111440820, "dur":1546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111442416, "dur":40516, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111482938, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057111482951, "dur":1707, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111484715, "dur":215655, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111700422, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057111700437, "dur":8079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111708575, "dur":69649, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111778241, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057111778256, "dur":35168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057111814013, "dur":217436, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057112031457, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057112031473, "dur":1813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057112033341, "dur":1879, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057112035228, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057112035242, "dur":1521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057112036851, "dur":104784, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057112141641, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057112141655, "dur":2197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057112143904, "dur":320150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Web.Services.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057112464060, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057112464072, "dur":3567, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Web.Services.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057112467695, "dur":548594, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113016296, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113016310, "dur":1737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113018104, "dur":519262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113537372, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113537385, "dur":4810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113542254, "dur":228773, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Mono.WebBrowser.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113771064, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113771082, "dur":1987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Mono.WebBrowser.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113773129, "dur":1675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113774810, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113774824, "dur":1378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113776265, "dur":79651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Accessibility.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113855927, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113855945, "dur":2724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Accessibility.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683057113858725, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1683057113858905, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113871255, "dur":2953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1683057113874263, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1683057113874326, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113874397, "dur":1509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1683057113875962, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":1, "ts":1683057113876018, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113876029, "dur":3927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":1, "ts":1683057113880072, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683057113880222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113880243, "dur":4700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683057113885073, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1683057113885149, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113885160, "dur":1892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1683057113887108, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1683057113887289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113887301, "dur":1374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1683057113888728, "dur":1421, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1683057113890157, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113890171, "dur":1435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1683057113891657, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/resources.resource" }}
+,{ "pid":12345, "tid":1, "ts":1683057113891710, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113891720, "dur":62783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/resources.resource" }}
+,{ "pid":12345, "tid":1, "ts":1683057113954564, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/level0.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683057113954635, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113954647, "dur":2033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/level0.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683057113956732, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1683057113956786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683057113956797, "dur":28447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1683057113985337, "dur":555839, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057110423617, "dur":650, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057110424267, "dur":7767, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057110432053, "dur":204316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1683057110636374, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057110639364, "dur":1463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1683057110640890, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1683057110641043, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057110641356, "dur":94375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1683057110735791, "dur":42335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057110778162, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057110778311, "dur":16243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057110794606, "dur":87910, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057110882524, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057110882564, "dur":1596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057110884225, "dur":35971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057110920202, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057110920215, "dur":1227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057110921519, "dur":161838, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111083365, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057111083380, "dur":15828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111099276, "dur":202942, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111302222, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057111302235, "dur":2120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111304414, "dur":65432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111369853, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057111369867, "dur":2517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111372440, "dur":119349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111491793, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057111491804, "dur":15546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111507403, "dur":41883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111549296, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057111549314, "dur":10153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111559524, "dur":116555, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111676088, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057111676106, "dur":20179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111696348, "dur":159703, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111856159, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057111856191, "dur":35258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111891525, "dur":1898, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111893435, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057111893507, "dur":1993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057111895555, "dur":157981, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112053543, "dur":12, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057112053567, "dur":1610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112055237, "dur":31019, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112086266, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057112086287, "dur":26089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112112434, "dur":947, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112113389, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057112113405, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112115061, "dur":201814, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112316882, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057112316898, "dur":1462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112318423, "dur":144646, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112463076, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057112463091, "dur":1596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112464740, "dur":270574, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112735321, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057112735337, "dur":1940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112737336, "dur":78115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112815458, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057112815496, "dur":1666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112817219, "dur":97135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Drawing.Design.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112914361, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057112914375, "dur":1582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Drawing.Design.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057112916016, "dur":146203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.DirectoryServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057113062226, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057113062242, "dur":1458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.DirectoryServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057113063748, "dur":258011, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057113321765, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057113321781, "dur":1958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057113323795, "dur":224109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057113547926, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057113547966, "dur":2867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057113550890, "dur":474746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057114025644, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683057114025659, "dur":1551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683057114027265, "dur":513908, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110423502, "dur":755, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110424258, "dur":7779, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110432053, "dur":414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1683057110433119, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110438573, "dur":19915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1683057110458542, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1683057110458684, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110458773, "dur":14555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1683057110473375, "dur":162407, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057110635788, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110636396, "dur":2499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057110638951, "dur":77746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops.exe" }}
+,{ "pid":12345, "tid":3, "ts":1683057110716703, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110716716, "dur":2282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops.exe" }}
+,{ "pid":12345, "tid":3, "ts":1683057110719069, "dur":29597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057110748673, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110756894, "dur":1529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057110758478, "dur":83697, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057110842185, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110842203, "dur":1491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057110843758, "dur":65601, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057110909367, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057110909382, "dur":1712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057110911151, "dur":165248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111076407, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057111076421, "dur":17521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111094007, "dur":172227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111266241, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057111266256, "dur":2157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111268478, "dur":90618, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111359104, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057111359119, "dur":13044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111372226, "dur":119487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111491717, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057111491728, "dur":2602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111494405, "dur":257695, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111752108, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057111752124, "dur":1974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111754155, "dur":61711, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111815874, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057111815888, "dur":2043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057111818043, "dur":192359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057112010414, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057112010428, "dur":1851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057112012332, "dur":91026, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057112103365, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057112103381, "dur":18134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057112121582, "dur":187682, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057112309271, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057112309297, "dur":1445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057112310793, "dur":98436, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Web.ApplicationServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057112409236, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057112409250, "dur":1476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Web.ApplicationServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057112410868, "dur":620440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057113031315, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057113031330, "dur":7636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057113039024, "dur":146115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057113185146, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057113185159, "dur":5647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057113190870, "dur":749677, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057113940556, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057113940574, "dur":4425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683057113945058, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683057113945116, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057113945129, "dur":7467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683057113952655, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1683057113952760, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057113952772, "dur":3096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1683057113955920, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1683057113955981, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057113955990, "dur":3950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1683057113964519, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1683057113964649, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057113964661, "dur":4599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1683057113969324, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1683057113969522, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683057113969533, "dur":1289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1683057113970874, "dur":570427, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057110423655, "dur":623, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057110424278, "dur":8223, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057110432502, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1683057110432630, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057110440920, "dur":15833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1683057110456830, "dur":11614, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1683057110468449, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057110468464, "dur":1172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1683057110469684, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1683057110469811, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057110469828, "dur":168114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1683057110638045, "dur":119747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057110757799, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057110757904, "dur":15664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057110773629, "dur":75285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057110848922, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057110848936, "dur":2468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057110851461, "dur":316744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111168212, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057111168226, "dur":88787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111257071, "dur":85199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111342275, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057111342288, "dur":1552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111343892, "dur":47656, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111391556, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057111391572, "dur":34925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111426568, "dur":81710, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111508283, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057111508297, "dur":1657, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111510016, "dur":55255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111565278, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057111565293, "dur":5921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111571266, "dur":85563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111656839, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057111656861, "dur":2522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111659450, "dur":66528, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111725985, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057111726000, "dur":1981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057111728061, "dur":652114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057112380182, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057112381852, "dur":1582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057112383489, "dur":734936, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057113118434, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057113118452, "dur":2425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057113120953, "dur":270110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057113391074, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057113391088, "dur":1520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057113392670, "dur":186829, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057113579505, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057113579518, "dur":2231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057113581805, "dur":653898, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Mono.Data.Sqlite.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057114235710, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683057114235724, "dur":1950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Mono.Data.Sqlite.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683057114237741, "dur":303459, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057110423765, "dur":522, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057110424287, "dur":8100, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057110432390, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1683057110432506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057110438726, "dur":450144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1683057110888926, "dur":126186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111015119, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111015133, "dur":1589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111016778, "dur":314131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111330915, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111330928, "dur":2586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111333570, "dur":58238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111391812, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111391824, "dur":35060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111426935, "dur":64752, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111491695, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111491709, "dur":2793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111494563, "dur":32833, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111527403, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111527417, "dur":33902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111561376, "dur":46805, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111608189, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111608206, "dur":1545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111609808, "dur":59671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111669486, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111669500, "dur":1474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111671028, "dur":37903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111708936, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111708949, "dur":1638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111710645, "dur":43595, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111754246, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057111754260, "dur":64235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057111818558, "dur":301479, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057112120042, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057112120160, "dur":8144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057112128377, "dur":605740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057112734124, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057112734138, "dur":5022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057112739237, "dur":198155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057112937400, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057112937446, "dur":14283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057112951794, "dur":187105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Design.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057113138906, "dur":45, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057113138965, "dur":38965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Design.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057113177985, "dur":575349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.ComponentModel.DataAnnotations.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057113753341, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057113753355, "dur":1797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.ComponentModel.DataAnnotations.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057113755208, "dur":783280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057114538495, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683057114538510, "dur":2563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683057114541136, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1683057114541141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110423821, "dur":475, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110424296, "dur":8001, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110432299, "dur":12545, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1683057110444851, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110444956, "dur":4257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1683057110449267, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1683057110449488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110449569, "dur":5694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1683057110455321, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1683057110455509, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110457050, "dur":2089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1683057110459192, "dur":176999, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1683057110636196, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110636210, "dur":2027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1683057110638353, "dur":8573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1683057110646933, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110646945, "dur":5894, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1683057110652907, "dur":128994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057110781908, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110781921, "dur":13249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057110795217, "dur":45920, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057110841149, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110841169, "dur":1571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057110842800, "dur":76397, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057110919203, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110919218, "dur":1398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057110920671, "dur":33211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057110953889, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057110953902, "dur":1918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057110955877, "dur":52391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111008276, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057111008289, "dur":1317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111009667, "dur":296244, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111305918, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057111305932, "dur":5785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111311774, "dur":28735, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111340517, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057111340531, "dur":1509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111342095, "dur":46570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111388776, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057111388850, "dur":37251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111426154, "dur":93062, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111519223, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057111519268, "dur":113491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111632844, "dur":221356, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111854207, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057111854222, "dur":36975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057111891252, "dur":510135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057112401394, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057112401410, "dur":1997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057112403462, "dur":356405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057112759872, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057112759885, "dur":2947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057112762884, "dur":430246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057113193136, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057113193152, "dur":2321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057113195526, "dur":262692, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Ookii.Dialogs.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057113458224, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057113458238, "dur":3696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Ookii.Dialogs.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057113461999, "dur":615688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057114077694, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683057114077709, "dur":6405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683057114084168, "dur":457033, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057110423897, "dur":408, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057110424305, "dur":7920, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057110432228, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1683057110432376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057110438273, "dur":10794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1683057110449121, "dur":15185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1683057110464312, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057110464328, "dur":2821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1683057110467198, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1683057110467334, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057110467345, "dur":170479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1683057110638090, "dur":185718, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057110823815, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057110823827, "dur":41346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057110865240, "dur":95657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057110960904, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057110960918, "dur":11113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057110972096, "dur":116208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111088317, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057111088340, "dur":145033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111233433, "dur":68642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111302083, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057111302100, "dur":1883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111304047, "dur":51200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111355255, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057111355269, "dur":2523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111357853, "dur":44676, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111402537, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057111402551, "dur":24226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111426839, "dur":86103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111512949, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057111512961, "dur":48188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111561227, "dur":117494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111678728, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057111678742, "dur":16396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111695400, "dur":78475, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111773882, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057111773897, "dur":2908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111776862, "dur":39548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111816420, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057111816442, "dur":9487, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057111825983, "dur":178147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112004137, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057112004154, "dur":1528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112005740, "dur":74139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112079956, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057112079974, "dur":39400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112119432, "dur":1154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112120591, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057112120606, "dur":8255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112128919, "dur":416798, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Windows.Forms.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112545725, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057112545742, "dur":8986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Windows.Forms.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112554783, "dur":204582, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112759373, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057112759387, "dur":3056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112762494, "dur":59232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112821733, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057112821757, "dur":2858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057112824676, "dur":399689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057113224372, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057113224386, "dur":11281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057113235722, "dur":324687, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Novell.Directory.Ldap.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057113560416, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057113560429, "dur":4462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Novell.Directory.Ldap.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057113564961, "dur":417201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Mono.Posix.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057113982168, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683057113982181, "dur":4672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Mono.Posix.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683057113986904, "dur":554313, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057110423939, "dur":375, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057110424315, "dur":7836, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057110432155, "dur":18797, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1683057110450958, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057110450998, "dur":1606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1683057110452658, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1683057110452842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057110452855, "dur":495104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1683057110948102, "dur":108288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111056397, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057111056412, "dur":22915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111079810, "dur":147439, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111227257, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057111227271, "dur":6062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111233392, "dur":247700, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111481099, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057111481120, "dur":1433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111482618, "dur":43497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111526126, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057111526155, "dur":33931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111560132, "dur":149650, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111709900, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057111709915, "dur":2296, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111712264, "dur":136732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111849003, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057111849017, "dur":37060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057111886141, "dur":195808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057112081956, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057112081975, "dur":1522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057112083557, "dur":1372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057112084935, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057112084954, "dur":27212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057112112234, "dur":136319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057112248559, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057112248575, "dur":41991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057112290629, "dur":1865132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Web.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057114155768, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683057114155782, "dur":3936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dpres/Documents/GitHub/GrooveChops/Builds/GrooveChops_Data/Managed/System.Web.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683057114159773, "dur":381501, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683057114548941, "dur":6271, "ph":"X", "name": "ProfilerWriteOutput" }
+,
