@@ -78,7 +78,7 @@ public class MidiManager : MonoBehaviour
         //Debug.Log(noteon.NoteName);
     }
 
-    public void SetMidiPath(string path)
+    public void LoadMidiFromPath(string path)
     {
         midiPath = path;
         player.MPTK_MidiName = Path.GetFileNameWithoutExtension(path);

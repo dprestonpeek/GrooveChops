@@ -9,15 +9,24 @@ public class UIManager : MonoBehaviour
 
     public bool MidiOK = false;
     public bool Mp3OK = false;
+    public bool MapOK = false;
 
     [SerializeField]
     GameObject noteCanvas;
+
+    [SerializeField]
+    GameObject errorWindow;
+    [SerializeField]
+    TMP_Text errorWindowText;
 
     [SerializeField]
     TMP_Text midi;
 
     [SerializeField]
     TMP_Text mp3;
+
+    [SerializeField]
+    TMP_Text map;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +37,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void UpdateMidi(string midiName)
@@ -39,6 +48,17 @@ public class UIManager : MonoBehaviour
     public void UpdateMp3(string mp3Name)
     {
         mp3.text = mp3Name;
+    }
+
+    public void UpdateMap(string mapName)
+    {
+        map.text = mapName;
+    }
+
+    public void ShowErrorWindow(string errorMsg)
+    {
+        errorWindowText.text = errorMsg;
+        errorWindow.SetActive(true);
     }
 
     public void StartGamePressed()

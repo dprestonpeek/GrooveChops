@@ -16,14 +16,19 @@ public class FileBrowserUpdate : MonoBehaviour
     MidiManager midiManager;
     [SerializeField]
     AudioSource audioPlayer;
+    [SerializeField]
+    DrumMapManager mapManager;
 
     [SerializeField]
     bool midiBrowser = false;
     [SerializeField]
     bool mp3Browser = false;
+    [SerializeField]
+    bool drumMapBrowser = false;
 
     public static FileBrowserUpdate midiInstance;
     public static FileBrowserUpdate mp3Instance;
+    public static FileBrowserUpdate mapInstance;
 
     private void Start()
     {
@@ -34,6 +39,10 @@ public class FileBrowserUpdate : MonoBehaviour
         else if (mp3Instance)
         {
             mp3Instance = this;
+        }
+        else if (drumMapBrowser)
+        {
+            mapInstance = this;
         }
     }
 
@@ -49,11 +58,15 @@ public class FileBrowserUpdate : MonoBehaviour
             //StartCoroutine(LoadImage(path));
             if (midiBrowser)
             {
-                midiManager.SetMidiPath(path);
+                midiManager.LoadMidiFromPath(path);
             }
             if (mp3Browser)
             {
-                AudioManager.Instance.SetMP3Path(path);
+                AudioManager.Instance.LoadAudioFromPath(path);
+            }
+            if (drumMapBrowser)
+            {
+                mapManager.LoadDrumMapFromPath(path);
             }
         });
     }

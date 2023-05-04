@@ -1,0 +1,12 @@
+Kick		=35,36
+Snare		=33,37,38,40,91
+Tom0		=-1
+Tom1		=47,48,50,60
+Tom2		=45,61
+Tom3		=41,43
+LeftCrash	=55,57,95,98
+RightCrash	=49,97
+Hihat		=42,44,46,92
+Ride		=51,53,59,93,94
+China		=52,96
+Splash	=-1

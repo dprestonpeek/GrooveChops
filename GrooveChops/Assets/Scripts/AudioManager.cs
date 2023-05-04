@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void SetMP3Path(string path)
+    public void LoadAudioFromPath(string path)
     {
         mp3Path = path;
         StartCoroutine(LoadAudio());

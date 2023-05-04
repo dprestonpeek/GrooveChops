@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638186313008302919
-    m_Hash: 1010242877
+      ticks: 638187730255398497
+    m_Hash: 1966945893
   m_LockFileStatus:
     m_FilePath: C:/Users/dpres/Documents/GitHub/GrooveChops/GrooveChops/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638186313519686379
-    m_Hash: 1035663092
+      ticks: 638187730255398497
+    m_Hash: 1132395109
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3340,10 +3340,12 @@ m_ResolvedPackages:
     - 3.0.2
     - 3.1.0
     - 3.2.0
+    - 3.2.1
     compatible:
     - 3.0.2
     - 3.1.0
     - 3.2.0
+    - 3.2.1
     verified: 3.0.2
   dependencies: []
   resolvedDependencies: []
