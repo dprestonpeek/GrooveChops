@@ -19,14 +19,14 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     TMP_Text errorWindowText;
 
-    [SerializeField]
-    TMP_Text midi;
+    //[SerializeField]
+    //TMP_Text midi;
 
-    [SerializeField]
-    TMP_Text mp3;
+    //[SerializeField]
+    //TMP_Text mp3;
 
-    [SerializeField]
-    TMP_Text map;
+    //[SerializeField]
+    //TMP_Text map;
 
     // Start is called before the first frame update
     void Start()
@@ -40,19 +40,9 @@ public class UIManager : MonoBehaviour
 
     }
 
-    public void UpdateMidi(string midiName)
+    public void UpdateInfo(string infoName)
     {
-        midi.text = midiName;
-    }
 
-    public void UpdateMp3(string mp3Name)
-    {
-        mp3.text = mp3Name;
-    }
-
-    public void UpdateMap(string mapName)
-    {
-        map.text = mapName;
     }
 
     public void ShowErrorWindow(string errorMsg)
@@ -63,11 +53,14 @@ public class UIManager : MonoBehaviour
 
     public void StartGamePressed()
     {
-        if (Mp3OK && MidiOK)
-        {
-            GameManager.Instance.StartGame();
-            noteCanvas.SetActive(true);
-            gameObject.SetActive(false);
-        }
+        //UpdateMidi(GameManager.Instance.pickedSong.MidiFile);
+        //UpdateMp3(GameManager.Instance.pickedSong.Mp3File);
+        //UpdateMap(GameManager.Instance.pickedSong.MapFile);
+        //UpdateInfo(GameManager.Instance.pickedSong.InfoFile);
+
+        GameManager.Instance.PrepareGame();
+        GameManager.Instance.StartGame();
+        noteCanvas.SetActive(true);
+        gameObject.SetActive(false);
     }
 }

@@ -95,8 +95,7 @@ public class MidiManager : MonoBehaviour
 
         if (midi != null)
         {
-            UIManager.Instance.UpdateMidi(player.MPTK_MidiName);
-            UIManager.Instance.MidiOK = true;
+            //UIManager.Instance.UpdateMidi(player.MPTK_MidiName);
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public Song pickedSong;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,22 @@ public class GameManager : MonoBehaviour
     {
         AudioManager.Instance.PlayDelayed();
         MidiManager.Instance.player.MPTK_Play();
+    }
+
+    public void PrepareGame()
+    {
+        AudioManager.Instance.LoadAudioFromPath(pickedSong.Mp3File);
+        MidiManager.Instance.LoadMidiFromPath(pickedSong.MidiFile);
+        DrumMapManager.Instance.LoadDrumMapFromPath(pickedSong.MapFile);
+    }
+
+    public void PickSong(Song song)
+    {
+        pickedSong = song;
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

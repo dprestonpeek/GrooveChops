@@ -18,6 +18,8 @@ public class FileBrowserUpdate : MonoBehaviour
     AudioSource audioPlayer;
     [SerializeField]
     DrumMapManager mapManager;
+    [SerializeField]
+    SongImport songImport;
 
     [SerializeField]
     bool midiBrowser = false;
@@ -25,10 +27,13 @@ public class FileBrowserUpdate : MonoBehaviour
     bool mp3Browser = false;
     [SerializeField]
     bool drumMapBrowser = false;
+    [SerializeField]
+    bool infoFileBrowser = false;
 
     public static FileBrowserUpdate midiInstance;
     public static FileBrowserUpdate mp3Instance;
     public static FileBrowserUpdate mapInstance;
+    public static FileBrowserUpdate infoInstance;
 
     private void Start()
     {
@@ -43,6 +48,10 @@ public class FileBrowserUpdate : MonoBehaviour
         else if (drumMapBrowser)
         {
             mapInstance = this;
+        }
+        else if (infoFileBrowser)
+        {
+            infoInstance = this;
         }
     }
 
@@ -59,51 +68,38 @@ public class FileBrowserUpdate : MonoBehaviour
             if (midiBrowser)
             {
                 midiManager.LoadMidiFromPath(path);
+                if (songImport)
+                {
+                    songImport.SetMidiFile(path);
+                }
             }
             if (mp3Browser)
             {
                 AudioManager.Instance.LoadAudioFromPath(path);
+                if (songImport)
+                {
+                    songImport.SetMp3File(path);
+                }
             }
             if (drumMapBrowser)
             {
                 mapManager.LoadDrumMapFromPath(path);
+                if (songImport)
+                {
+                    songImport.SetMapFile(path);
+                }
+            }
+            if (infoFileBrowser)
+            {
+                if (songImport)
+                {
+                    songImport.SetInfoFile(path);
+                }
+            }
+            if (filename)
+            {
+                filename.text = Path.GetFileName(path);
             }
         });
     }
-
-    //IEnumerator LoadAudio(string path)
-    //{
-    //    using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(path))
-    //    {
-    //        yield return uwr.SendWebRequest();
-
-    //        if (uwr.isNetworkError || uwr.isHttpError)
-    //        {
-    //            Debug.Log(uwr.error);
-    //        }
-    //        else
-    //        {
-    //            var uwrTexture = DownloadHandlerTexture.GetContent(uwr);
-    //            rawImage.texture = uwrTexture;
-    //        }
-    //    }
-    //}
-
-    //IEnumerator LoadImage(string path)
-    //{
-    //    using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(path))
-    //    {
-    //        yield return uwr.SendWebRequest();
-
-    //        if (uwr.isNetworkError || uwr.isHttpError)
-    //        {
-    //            Debug.Log(uwr.error);
-    //        }
-    //        else
-    //        {
-    //            var uwrTexture = DownloadHandlerTexture.GetContent(uwr);
-    //            rawImage.texture = uwrTexture;
-    //        }
-    //    }
-    //}
 }

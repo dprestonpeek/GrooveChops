@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
         audioSource.clip = audioClip;
         if (audioSource.clip != null)
         {
-            UIManager.Instance.UpdateMp3(audioClip.name);
+            //UIManager.Instance.UpdateMp3(audioClip.name);
             UIManager.Instance.Mp3OK = true;
         }
     }
@@ -60,7 +60,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayDelayed()
     {
-        Invoke("PlayAudio", 6.7f);
+        Invoke("PlayAudio", 7.1f);
         timerOn = true;
     }
 

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class DrumMapManager : MonoBehaviour
 {
+    public static DrumMapManager Instance;
     string[] drumMapData = new string[10];
     string loadedDrumMap = "";
 
@@ -14,6 +15,7 @@ public class DrumMapManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
         loadedDrumMap = PlayerPrefs.GetString("drummap");
         if (loadedDrumMap == "")
         {
@@ -52,7 +54,7 @@ public class DrumMapManager : MonoBehaviour
                 }
                 Tracks.DrumMap.Map[line] = mapline;
             }
-            UIManager.Instance.UpdateMap(Path.GetFileName(mapPath));
+            //UIManager.Instance.UpdateMap(Path.GetFileName(mapPath));
         }
         catch (Exception ex)
         {

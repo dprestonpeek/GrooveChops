@@ -1,0 +1,36 @@
+Features:
+Add Main Menu
+	QuickPlay
+		Choose song
+			Choose Song from Library
+			Load a New Song
+		Who's Playing
+			Drums
+			Bass
+			Guitar
+			Other Tracks
+	Line up a Gig
+		Choose Songs
+			Choose Song from Library
+	Manage Library
+		[Library]
+			Add a new Song
+			Edit song
+			Open Folder
+	Training
+		Choose a part of a song
+		Choose an Instrument
+	Options
+		[Drum Config]
+			Drumset configuration
+			Drum Map
+		[Note Prefs]
+			Note Colors
+			Note Order
+		[Visual]
+			Menu background
+			Play video in background
+		[Audio]
+			Music Volume
+			Menu Volume
+	Quit
