@@ -29,11 +29,14 @@ public class FileBrowserUpdate : MonoBehaviour
     bool drumMapBrowser = false;
     [SerializeField]
     bool infoFileBrowser = false;
+    [SerializeField]
+    bool importFileBrowser = false;
 
     public static FileBrowserUpdate midiInstance;
     public static FileBrowserUpdate mp3Instance;
     public static FileBrowserUpdate mapInstance;
     public static FileBrowserUpdate infoInstance;
+    public static FileBrowserUpdate importInstance;
 
     private void Start()
     {
@@ -52,6 +55,10 @@ public class FileBrowserUpdate : MonoBehaviour
         else if (infoFileBrowser)
         {
             infoInstance = this;
+        }
+        else if (importFileBrowser)
+        {
+            importInstance = this;
         }
     }
 
@@ -94,6 +101,13 @@ public class FileBrowserUpdate : MonoBehaviour
                 if (songImport)
                 {
                     songImport.SetInfoFile(path);
+                }
+            }
+            if (importFileBrowser)
+            {
+                if (songImport)
+                {
+                    songImport.SetImportFile(path);
                 }
             }
             if (filename)

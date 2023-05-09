@@ -23,6 +23,45 @@ public class SongManager : MonoBehaviour
         
     }
 
+    public void AddNewSong(string songLocation)
+    {
+        string midiPath = "";
+        string mp3Path = "";
+        string mapPath = "";
+        string infoPath = "";
+        string[] info = new string[2];
+
+        try
+        {
+            foreach (string file in Directory.GetFiles(songLocation))
+            {
+                if (file.Contains(".mid") || file.Contains(".midi"))
+                {
+                    midiPath = file;
+                }
+                if (file.Contains(".mp3"))
+                {
+                    mp3Path = file;
+                }
+                if (file.Contains("drummap.txt"))
+                {
+                    mapPath = file;
+                }
+                if (file.Contains("info.txt"))
+                {
+                    infoPath = file;
+                    info = File.ReadAllLines(infoPath);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            UIManager.Instance.ShowErrorWindow(ex.Message);
+            return;
+        }
+        AddNewSong(info[1], info[0], midiPath, mp3Path, mapPath, infoPath);
+    }
+
     public void AddNewSong(string songName, string artistName, string midiPath, string mp3Path, string mapPath, string infoPath)
     {
         string artistPath = Path.Combine(libraryPath, artistName);
@@ -94,6 +133,15 @@ public class SongManager : MonoBehaviour
             return newSong;
         }
         return null;
+    }
+
+    public void UnpackImportedSong(string importedFile)
+    {
+        string newImportedPath = Path.Combine(libraryPath, "Import");
+        string newImportedFile = Path.Combine(newImportedPath, Path.GetFileName(importedFile));
+        ZipFile.ExtractToDirectory(importedFile, newImportedPath);
+        AddNewSong(newImportedPath);
+        Directory.Delete(newImportedPath, true);
     }
 
     public void ExportSong(string songName, string artistName, string exportPath)

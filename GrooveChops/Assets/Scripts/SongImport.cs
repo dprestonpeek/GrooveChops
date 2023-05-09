@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class SongImport : MonoBehaviour
 {
-    public string MidiFile = "";
-    public string Mp3File = "";
-    public string MapFile = "";
-    public string InfoFile = "";
+    private string MidiFile = "";
+    private string Mp3File = "";
+    private string MapFile = "";
+    private string InfoFile = "";
+    private string ImportFile = "";
 
     public void SetMidiFile(string midiFile)
     {
@@ -30,10 +31,22 @@ public class SongImport : MonoBehaviour
         InfoFile = infoFile;
     }
 
+    public void SetImportFile(string importFile)
+    {
+        ImportFile = importFile;
+    }
+
     public void ImportSong()
     {
-        string[] info = GetSongInfo();
-        SongManager.Instance.AddNewSong(info[1], info[0], MidiFile, Mp3File, MapFile, InfoFile);
+        if (MidiFile == ""  || Mp3File == "" || MapFile == "" || InfoFile == "")
+        {
+            SongManager.Instance.UnpackImportedSong(ImportFile);
+        }
+        else
+        {
+            string[] info = GetSongInfo();
+            SongManager.Instance.AddNewSong(info[1], info[0], MidiFile, Mp3File, MapFile, InfoFile);
+        }
     }
 
     private string[] GetSongInfo()
