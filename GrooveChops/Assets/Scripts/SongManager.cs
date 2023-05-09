@@ -29,6 +29,7 @@ public class SongManager : MonoBehaviour
         string mp3Path = "";
         string mapPath = "";
         string infoPath = "";
+        string mp4Path = "";
         string[] info = new string[2];
 
         try
@@ -52,6 +53,10 @@ public class SongManager : MonoBehaviour
                     infoPath = file;
                     info = File.ReadAllLines(infoPath);
                 }
+                if (file.Contains(".mp4"))
+                {
+                    mp4Path = file;
+                }
             }
         }
         catch (Exception ex)
@@ -59,10 +64,15 @@ public class SongManager : MonoBehaviour
             UIManager.Instance.ShowErrorWindow(ex.Message);
             return;
         }
-        AddNewSong(info[1], info[0], midiPath, mp3Path, mapPath, infoPath);
+        AddNewSong(info[1], info[0], midiPath, mp3Path, mapPath, infoPath, mp4Path);
     }
 
     public void AddNewSong(string songName, string artistName, string midiPath, string mp3Path, string mapPath, string infoPath)
+    {
+        AddNewSong(songName, artistName, midiPath, mp3Path, mapPath, infoPath, "");
+    }
+
+    public void AddNewSong(string songName, string artistName, string midiPath, string mp3Path, string mapPath, string infoPath, string mp4Path)
     {
         string artistPath = Path.Combine(libraryPath, artistName);
         string songPath = Path.Combine(artistPath, songName);
@@ -87,6 +97,10 @@ public class SongManager : MonoBehaviour
         File.Copy(mp3Path, Path.Combine(songPath, Path.GetFileName(mp3Path)));
         File.Copy(mapPath, Path.Combine(songPath, Path.GetFileName(mapPath)));
         File.Copy(infoPath, Path.Combine(songPath, Path.GetFileName(infoPath)));
+        if (mp4Path != "")
+        {
+            File.Copy(mp4Path, Path.Combine(songPath, Path.GetFileName(mp4Path)));
+        }
     }
 
     public Song LoadSongFromLibrary(string songName, string artistName)
@@ -98,6 +112,7 @@ public class SongManager : MonoBehaviour
         string mp3Path = "";
         string mapPath = "";
         string infoPath = "";
+        string mp4Path = "";
 
         try
         {
@@ -118,6 +133,10 @@ public class SongManager : MonoBehaviour
                 if (file.Contains("info.txt"))
                 {
                     infoPath = file;
+                }
+                if (file.Contains(".mp4"))
+                {
+                    mp4Path = file;
                 }
             }
         }

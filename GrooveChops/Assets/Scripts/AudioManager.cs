@@ -17,6 +17,10 @@ public class AudioManager : MonoBehaviour
 
     public float timer = 0;
     public bool timerOn = false;
+
+    public bool stopped = false;
+    bool canStop = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,10 +60,22 @@ public class AudioManager : MonoBehaviour
         {
             timer += Time.deltaTime;
         }
+        if (audioSource.isPlaying)
+        {
+            canStop = true;
+        }
+        if (canStop)
+        {
+            if (!audioSource.isPlaying)
+            {
+                GameManager.Instance.SongOver();
+            }
+        }
     }
 
     public void PlayDelayed()
     {
+        Invoke("StopIntro", 7);
         Invoke("PlayAudio", 7.1f);
         timerOn = true;
     }
@@ -67,6 +83,15 @@ public class AudioManager : MonoBehaviour
     private void PlayAudio()
     {
         audioSource.Play();
+        if (VideoManager.Instance.playVideo)
+        {
+            VideoManager.Instance.PlayVideo();
+        }
+    }
+
+    private void StopIntro()
+    {
+        VideoManager.Instance.StopIntro();
     }
 
     private WWW GetAudioFromFile(string path)

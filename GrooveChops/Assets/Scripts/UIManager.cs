@@ -53,11 +53,6 @@ public class UIManager : MonoBehaviour
 
     public void StartGamePressed()
     {
-        //UpdateMidi(GameManager.Instance.pickedSong.MidiFile);
-        //UpdateMp3(GameManager.Instance.pickedSong.Mp3File);
-        //UpdateMap(GameManager.Instance.pickedSong.MapFile);
-        //UpdateInfo(GameManager.Instance.pickedSong.InfoFile);
-
         GameManager.Instance.PrepareGame();
         GameManager.Instance.StartGame();
         noteCanvas.SetActive(true);

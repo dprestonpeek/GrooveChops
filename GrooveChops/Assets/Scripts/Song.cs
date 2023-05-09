@@ -13,6 +13,7 @@ public class Song : MonoBehaviour
     public string Mp3File;
     public string MapFile;
     public string InfoFile;
+    public string Mp4File;
 
     public Song(string name, string artist, string songPath)
     {
@@ -57,6 +58,10 @@ public class Song : MonoBehaviour
                 {
                     InfoFile = file;
                 }
+                if (file.Contains(".mp4"))
+                {
+                    Mp4File = file;
+                }
             }
         }
         catch (Exception ex)
@@ -75,7 +80,7 @@ public class SongInfo
     public string Mp3File;
     public string MapFile;
     public string InfoFile;
-    
+    public string Mp4File;
 
     public SongInfo(string name, string artist, string songPath)
     {
@@ -84,6 +89,7 @@ public class SongInfo
         SongPath = songPath;
         GetSongFiles();
     }
+
     public void GetSongFiles()
     {
         try
@@ -105,6 +111,10 @@ public class SongInfo
                 if (file.Contains("info.txt"))
                 {
                     InfoFile = file;
+                }
+                if (file.Contains(".mp4"))
+                {
+                    Mp4File = file;
                 }
             }
         }
