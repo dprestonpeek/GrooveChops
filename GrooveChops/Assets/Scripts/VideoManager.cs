@@ -41,6 +41,11 @@ public class VideoManager : MonoBehaviour
         PlayIntro();
     }
 
+    public void DeactivateVideo()
+    {
+        playVideo = false;
+    }
+
     public void PlayVideo()
     {
         videoPlane.SetActive(true);

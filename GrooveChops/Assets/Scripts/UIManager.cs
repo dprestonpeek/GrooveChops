@@ -58,4 +58,20 @@ public class UIManager : MonoBehaviour
         noteCanvas.SetActive(true);
         gameObject.SetActive(false);
     }
+
+    public void ShowMenu()
+    {
+        noteCanvas.SetActive(false);
+        gameObject.SetActive(true);
+    }
+
+    public void PickAnotherSong()
+    {
+        if (!gameObject.activeSelf)
+        {
+            ShowMenu();
+        }
+        Library.Instance.DisplayLibrary();
+        VideoManager.Instance.DeactivateVideo();
+    }
 }

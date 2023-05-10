@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public Song pickedSong;
 
+    [SerializeField]
+    GameObject EndSongMenu;
+
     bool gig = false;
     // Start is called before the first frame update
     void Start()
@@ -46,8 +49,15 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(0);
+            MidiManager.Instance.player.MPTK_Stop();
+            UIManager.Instance.ShowMenu();
+            EndSongMenu.SetActive(true);
         }
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void PickSong(Song song)
