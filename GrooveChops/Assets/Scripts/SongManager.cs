@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using UnityEngine;
@@ -195,5 +196,10 @@ public class SongManager : MonoBehaviour
 
         //Create the zip file
         ZipFile.CreateFromDirectory(libraryPath, zipPath);
+    }
+
+    public void OpenLibraryFolder()
+    {
+        Process.Start("explorer.exe", libraryPath);
     }
 }

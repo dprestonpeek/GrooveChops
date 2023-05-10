@@ -19,15 +19,6 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     TMP_Text errorWindowText;
 
-    //[SerializeField]
-    //TMP_Text midi;
-
-    //[SerializeField]
-    //TMP_Text mp3;
-
-    //[SerializeField]
-    //TMP_Text map;
-
     // Start is called before the first frame update
     void Start()
     {

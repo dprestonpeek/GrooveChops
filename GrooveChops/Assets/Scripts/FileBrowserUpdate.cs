@@ -68,52 +68,65 @@ public class FileBrowserUpdate : MonoBehaviour
         //bp.filter = "Midi files (*.mid, *.midi)";
         bp.filterIndex = 0;
 
-        new FileBrowser().OpenFileBrowser(bp, path =>
+        if (importFileBrowser)
         {
-            //Load image from local path with UWR
-            //StartCoroutine(LoadImage(path));
-            if (midiBrowser)
+            new FileBrowserMulti().OpenFileBrowser(bp, paths =>
             {
-                midiManager.LoadMidiFromPath(path);
-                if (songImport)
+                if (importFileBrowser)
                 {
-                    songImport.SetMidiFile(path);
+                    if (songImport)
+                    {
+                        songImport.SetImportFiles(paths);
+                    }
                 }
-            }
-            if (mp3Browser)
+                //if (filename)
+                //{
+                //    filename.text = Path.GetFileName(paths);
+                //}
+            });
+        }
+        else
+        {
+            new FileBrowser().OpenFileBrowser(bp, path =>
             {
-                AudioManager.Instance.LoadAudioFromPath(path);
-                if (songImport)
+                //Load image from local path with UWR
+                //StartCoroutine(LoadImage(path));
+                if (midiBrowser)
                 {
-                    songImport.SetMp3File(path);
+                    midiManager.LoadMidiFromPath(path);
+                    if (songImport)
+                    {
+                        songImport.SetMidiFile(path);
+                    }
                 }
-            }
-            if (drumMapBrowser)
-            {
-                mapManager.LoadDrumMapFromPath(path);
-                if (songImport)
+                if (mp3Browser)
                 {
-                    songImport.SetMapFile(path);
+                    AudioManager.Instance.LoadAudioFromPath(path);
+                    if (songImport)
+                    {
+                        songImport.SetMp3File(path);
+                    }
                 }
-            }
-            if (infoFileBrowser)
-            {
-                if (songImport)
+                if (drumMapBrowser)
                 {
-                    songImport.SetInfoFile(path);
+                    mapManager.LoadDrumMapFromPath(path);
+                    if (songImport)
+                    {
+                        songImport.SetMapFile(path);
+                    }
                 }
-            }
-            if (importFileBrowser)
-            {
-                if (songImport)
+                if (infoFileBrowser)
                 {
-                    songImport.SetImportFile(path);
+                    if (songImport)
+                    {
+                        songImport.SetInfoFile(path);
+                    }
                 }
-            }
-            if (filename)
-            {
-                filename.text = Path.GetFileName(path);
-            }
-        });
+                if (filename)
+                {
+                    filename.text = Path.GetFileName(path);
+                }
+            });
+        }
     }
 }
