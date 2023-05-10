@@ -58,7 +58,7 @@ public class MidiManager : MonoBehaviour
             if (ev.Command == MPTKCommand.NoteOn)
             {
                 mptkEvents.Add(ev);
-                InstrumentEvent info = new InstrumentEvent(ev.Channel, ev.Value);
+                InstrumentEvent info = new InstrumentEvent(ev.Channel, ev.Value, ev.Velocity);
                 printer.MidiNoteEvent(info);
             }
         }
@@ -104,10 +104,12 @@ public struct InstrumentEvent
 {
     public int note;
     public int channel;
+    public int velocity;
 
-    public InstrumentEvent(int channel, int note)
+    public InstrumentEvent(int channel, int note, int velocity)
     {
         this.note = note;
         this.channel = channel;
+        this.velocity = velocity;
     }
 }

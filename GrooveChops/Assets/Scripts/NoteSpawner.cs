@@ -51,75 +51,81 @@ public class NoteSpawner : MonoBehaviour
 
     }
 
-    public void SpawnNote(int midiNote)
+    public void DetermineNote(int midiNote, int velocity)
     {
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Kick))
         {
-            Instantiate(Kick, transform);
+            SpawnNote(Kick, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Snare))
         {
-            Instantiate(Snare, transform);
+            SpawnNote(Snare, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Hihat))
         {
-            Instantiate(Hihat, transform);
+            SpawnNote(Hihat, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.LeftCrash))
         {
-            Instantiate(LeftCrash, transform);
+            SpawnNote(LeftCrash, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.RightCrash))
         {
-            Instantiate(RightCrash, transform);
+            SpawnNote(RightCrash, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.China))
         {
-            Instantiate(China, transform);
+            SpawnNote(China, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Splash))
         {
             if (splash)
             {
-                Instantiate(Splash, transform);
+                SpawnNote(Splash, velocity);
             }
             else
             {
-                Instantiate(LeftCrash, transform);
+                SpawnNote(LeftCrash, velocity);
             }
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Ride))
         {
-            Instantiate(Ride, transform);
+            SpawnNote(Ride, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Tom0))
         {
             if (tom0)
             {
-                Instantiate(Tom0, transform);
+                SpawnNote(Tom0, velocity);
             }
             else
             {
-                Instantiate(Tom1, transform);
+                SpawnNote(Tom1, velocity);
             }
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Tom1))
         {
-            Instantiate(Tom1, transform);
+            SpawnNote(Tom1, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Tom2))
         {
-            Instantiate(Tom2, transform);
+            SpawnNote(Tom2, velocity);
         }
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Tom3))
         {
-            Instantiate(Tom3, transform);
+            SpawnNote(Tom3, velocity);
         }
     }
 
     public void SpawnClick()
     {
         Instantiate(click, transform);
+    }
+
+    private void SpawnNote(GameObject noteObj, int velocity)
+    {
+        Instantiate(noteObj, transform);
+        Note note = noteObj.GetComponent<Note>();
     }
 
     private void SpawnNoteWithPulse(GameObject note)

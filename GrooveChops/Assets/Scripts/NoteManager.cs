@@ -75,7 +75,7 @@ public class NoteManager : MonoBehaviour
         {
             if (instEvent.channel == 9)
             {
-                spawner.SpawnNote(instEvent.note);
+                spawner.DetermineNote(instEvent.note, instEvent.velocity);
             }
         }
     }
