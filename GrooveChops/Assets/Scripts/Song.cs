@@ -33,7 +33,8 @@ public class Song : MonoBehaviour
 
     public void PickSong()
     {
-        GameManager.Instance.PickSong(this);
+        //GameManager.Instance.PickSong(this);
+        QuickplayManager.Instance.PickSong(this);
     }
 
     public void GetSongFiles()

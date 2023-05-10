@@ -11,8 +11,8 @@ public class EndSongManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Song currentSong = GameManager.Instance.pickedSong;
-        SongInfo.text = currentSong.Artist + " - " +currentSong.Name;
+        Song currentSong = GameManager.Instance.currentSong;
+        SongInfo.text = currentSong.Artist + " - " + currentSong.Name;
     }
 
     // Update is called once per frame
@@ -27,10 +27,12 @@ public class EndSongManager : MonoBehaviour
         UIManager.Instance.StartGamePressed();
     }
 
-    public void PickAnotherSong()
+    public void PlayNextSong()
     {
         gameObject.SetActive(false);
-        UIManager.Instance.PickAnotherSong();
+        VideoManager.Instance.DeactivateVideo();
+        GameManager.Instance.NextSong();
+        UIManager.Instance.StartGamePressed();
     }
 
     public void MainMenu()

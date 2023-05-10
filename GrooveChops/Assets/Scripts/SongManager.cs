@@ -200,6 +200,6 @@ public class SongManager : MonoBehaviour
 
     public void OpenLibraryFolder()
     {
-        Process.Start("explorer.exe", libraryPath);
+        Process.Start("explorer.exe", Path.Combine(Application.persistentDataPath, "SongLibrary"));
     }
 }

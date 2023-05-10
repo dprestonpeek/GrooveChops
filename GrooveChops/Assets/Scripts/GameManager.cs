@@ -6,16 +6,20 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public Song pickedSong;
+    public List<Song> pickedSongs;
+    public int songIndex = 0;
+    public Song currentSong;
 
     [SerializeField]
     GameObject EndSongMenu;
+    [SerializeField]
+    GameObject EndGigMenu;
 
-    bool gig = false;
     // Start is called before the first frame update
     void Start()
     {
         Instance = this;
+        pickedSongs = new List<Song>();
     }
 
     // Update is called once per frame
@@ -32,26 +36,36 @@ public class GameManager : MonoBehaviour
 
     public void PrepareGame()
     {
-        AudioManager.Instance.LoadAudioFromPath(pickedSong.Mp3File);
-        MidiManager.Instance.LoadMidiFromPath(pickedSong.MidiFile);
-        DrumMapManager.Instance.LoadDrumMapFromPath(pickedSong.MapFile);
-        if (pickedSong.Mp4File != "")
+        currentSong = pickedSongs[songIndex];
+        AudioManager.Instance.LoadAudioFromPath(currentSong.Mp3File);
+        MidiManager.Instance.LoadMidiFromPath(currentSong.MidiFile);
+        DrumMapManager.Instance.LoadDrumMapFromPath(currentSong.MapFile);
+        if (pickedSongs[songIndex].Mp4File != "")
         {
-            VideoManager.Instance.ActivateVideo(pickedSong.Mp4File);
+            VideoManager.Instance.ActivateVideo(currentSong.Mp4File);
         }
+    }
+
+    public void NextSong()
+    {
+        songIndex++;
+        currentSong = pickedSongs[songIndex];
     }
 
     public void SongOver()
     {
-        if (gig)
+        MidiManager.Instance.player.MPTK_Stop();
+        UIManager.Instance.ShowMenu();
+        if (songIndex < pickedSongs.Count - 1)
         {
-            //load & play next song
+            //gig is not over yet
+            EndSongMenu.SetActive(true);
         }
         else
         {
-            MidiManager.Instance.player.MPTK_Stop();
-            UIManager.Instance.ShowMenu();
-            EndSongMenu.SetActive(true);
+            //gig is over
+            EndGigMenu.SetActive(true);
+            songIndex = 0;
         }
     }
 
@@ -60,10 +74,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void PickSong(Song song)
-    {
-        pickedSong = song;
-    }
+    //public void PickSong(Song song)
+    //{
+    //    pickedSongs = song;
+    //}
 
     public void Exit()
     {

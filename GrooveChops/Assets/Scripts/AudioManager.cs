@@ -68,8 +68,8 @@ public class AudioManager : MonoBehaviour
         {
             if (!audioSource.isPlaying)
             {
-                GameManager.Instance.SongOver();
                 canStop = false;
+                GameManager.Instance.SongOver();
             }
         }
     }
