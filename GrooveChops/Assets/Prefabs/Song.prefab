@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6042219932049441914}
   - component: {fileID: 2450563783407833345}
   - component: {fileID: 42129383002819663}
+  - component: {fileID: 7857897121674156740}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -121,6 +122,21 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2450563783407833345}
   m_OnClick:
     m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7857897121674156740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245340615965904805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd2c785fe4124840a7b0aa0a58a5a26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftClick:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5750689216921466261}
         m_TargetAssemblyTypeName: Song, Assembly-CSharp
@@ -134,6 +150,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  middleClick:
+    m_PersistentCalls:
+      m_Calls: []
+  rightClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5750689216921466259
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,6 +208,7 @@ MonoBehaviour:
   Mp3File: 
   MapFile: 
   InfoFile: 
+  Mp4File: 
 --- !u!1 &8068881638118234110
 GameObject:
   m_ObjectHideFlags: 0

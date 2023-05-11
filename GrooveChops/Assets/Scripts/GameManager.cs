@@ -52,6 +52,18 @@ public class GameManager : MonoBehaviour
         currentSong = pickedSongs[songIndex];
     }
 
+    public void RemoveSongFromPicked(Song pickedSong)
+    {
+        foreach(Song song in pickedSongs)
+        {
+            if (song.SongPath == pickedSong.SongPath)
+            {
+                pickedSongs.Remove(song);
+                return;
+            }
+        }
+    }
+
     public void SongOver()
     {
         MidiManager.Instance.player.MPTK_Stop();
