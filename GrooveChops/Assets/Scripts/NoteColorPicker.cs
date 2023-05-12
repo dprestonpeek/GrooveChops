@@ -15,6 +15,9 @@ public class NoteColorPicker : MonoBehaviour
     GameObject hitLine;
 
     [SerializeField]
+    GameObject hitLineDefaults;
+
+    [SerializeField]
     GameObject noteButtons;
 
     [HideInInspector]
@@ -78,12 +81,12 @@ public class NoteColorPicker : MonoBehaviour
         {
             if (obj.gameObject.activeSelf)
             {
-                Color color = obj.material.color;
+                Color color = obj.sharedMaterial.color;
                 color.r = PlayerPrefs.GetFloat(obj.name + "-Color-R");
                 color.g = PlayerPrefs.GetFloat(obj.name + "-Color-G");
                 color.b = PlayerPrefs.GetFloat(obj.name + "-Color-B");
                 color.a = PlayerPrefs.GetFloat(obj.name + "-Color-A");
-                obj.material.color = color;
+                obj.sharedMaterial.color = color;
             }
         }
     }
@@ -204,7 +207,7 @@ public class NoteColorPicker : MonoBehaviour
         {
             if (obj.gameObject.activeSelf && obj.name == name)
             {
-                obj.GetComponent<MeshRenderer>().material.color = color;
+                obj.GetComponent<MeshRenderer>().sharedMaterial.color = color;
             }
         }
     }
@@ -215,10 +218,10 @@ public class NoteColorPicker : MonoBehaviour
         {
             if (obj.gameObject.activeSelf)
             {
-                PlayerPrefs.SetFloat(obj.name + "-Color-R", obj.material.color.r);
-                PlayerPrefs.SetFloat(obj.name + "-Color-G", obj.material.color.g);
-                PlayerPrefs.SetFloat(obj.name + "-Color-B", obj.material.color.b);
-                PlayerPrefs.SetFloat(obj.name + "-Color-A", obj.material.color.a);
+                PlayerPrefs.SetFloat(obj.name + "-Color-R", obj.sharedMaterial.color.r);
+                PlayerPrefs.SetFloat(obj.name + "-Color-G", obj.sharedMaterial.color.g);
+                PlayerPrefs.SetFloat(obj.name + "-Color-B", obj.sharedMaterial.color.b);
+                PlayerPrefs.SetFloat(obj.name + "-Color-A", obj.sharedMaterial.color.a);
             }
         }
     }
@@ -230,6 +233,23 @@ public class NoteColorPicker : MonoBehaviour
             if (field.text != "")
             {
                 PlayerPrefs.SetFloat(field.transform.parent.name + "-Pos", int.Parse(field.text));
+            }
+        }
+    }
+
+    public void ResetProperties()
+    {
+        MeshRenderer[] hitLineObjs = hitLine.GetComponentsInChildren<MeshRenderer>();
+        MeshRenderer[] defaultObjs = hitLineDefaults.GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < hitLineObjs.Length; i++)
+        {
+            MeshRenderer obj = hitLineObjs[i];
+            MeshRenderer defObj = defaultObjs[i];
+
+            if (obj.gameObject.activeSelf)
+            {
+                obj.sharedMaterial.color = defObj.sharedMaterial.color;
+                obj.gameObject.transform.localPosition = defObj.gameObject.transform.localPosition;
             }
         }
     }
