@@ -156,6 +156,8 @@ MonoBehaviour:
   rightClick:
     m_PersistentCalls:
       m_Calls: []
+  quickplayHoverEvent: 1
+  noteConfigHoverEvent: 0
 --- !u!1 &5750689216921466259
 GameObject:
   m_ObjectHideFlags: 0

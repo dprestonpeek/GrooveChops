@@ -111,6 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90336b06fd0b36f489c8004a96d80f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  solidNote: {fileID: 0}
+  accent: {fileID: 0}
 --- !u!54 &2669251919294988796
 Rigidbody:
   m_ObjectHideFlags: 0

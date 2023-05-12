@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     GameObject noteCanvas;
+    [SerializeField]
+    NoteSpawner noteSpawner;
 
     [SerializeField]
     GameObject errorWindow;
@@ -48,6 +50,7 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.StartGame();
         noteCanvas.SetActive(true);
         gameObject.SetActive(false);
+        noteSpawner.LoadNoteProperties();
     }
 
     public void ShowMenu()
