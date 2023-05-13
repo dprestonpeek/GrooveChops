@@ -1686,7 +1686,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -2224,7 +2224,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -3276,7 +3276,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -3728,7 +3728,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -9291,7 +9291,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -9835,7 +9835,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -12076,7 +12076,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -15345,7 +15345,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551716176}
-  - component: {fileID: 551716177}
   m_Layer: 0
   m_Name: NoteConfig
   m_TagString: Untagged
@@ -15378,29 +15377,6 @@ Transform:
   m_Father: {fileID: 1886142003}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &551716177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551716175}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7003de0459b78a74f82cac4c848acf3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorPicker: {fileID: 2130943086725167647}
-  NoteConfigHitLine: {fileID: 0}
-  DrumConfigHitLine: {fileID: 0}
-  noteHitLineDefaults: {fileID: 0}
-  drumHitLineDefaults: {fileID: 0}
-  noteButtons: {fileID: 716213811}
-  HighMid: {fileID: 0}
-  LowMid: {fileID: 0}
-  RightCrash: {fileID: 0}
-  China: {fileID: 0}
-  hoveredButton: {fileID: 0}
 --- !u!1 &555080541
 GameObject:
   m_ObjectHideFlags: 0
@@ -17137,7 +17113,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -17642,7 +17618,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -20381,7 +20357,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -24527,7 +24503,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -30720,7 +30696,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: SaveColors
         m_Mode: 1
@@ -30732,7 +30708,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: SaveOrder
         m_Mode: 1
@@ -31710,7 +31686,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -32026,7 +32002,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -43533,7 +43509,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -43937,7 +43913,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -44577,7 +44553,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -47931,7 +47907,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -48837,7 +48813,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -50144,7 +50120,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: LoadColors
         m_Mode: 1
@@ -50156,7 +50132,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: LoadOrder
         m_Mode: 1
@@ -50725,7 +50701,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -50919,7 +50895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: ResetProperties
         m_Mode: 1
@@ -51534,7 +51510,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -54551,7 +54527,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -57240,7 +57216,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: UpdateHitLineOrder
         m_Mode: 1
@@ -58069,7 +58045,7 @@ MonoBehaviour:
   leftClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: OpenPicker
         m_Mode: 1
@@ -58330,7 +58306,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 551716177}
+      - m_Target: {fileID: 1886142005}
         m_TargetAssemblyTypeName: NoteColorPicker, Assembly-CSharp
         m_MethodName: ClosePickerAndSetColor
         m_Mode: 1

@@ -171,6 +171,7 @@ public class NoteColorPicker : MonoBehaviour
                 color.b = PlayerPrefs.GetFloat(obj.name + "-Color-B");
                 color.a = PlayerPrefs.GetFloat(obj.name + "-Color-A");
                 obj.sharedMaterial.color = color;
+                GetButtonImage(obj.name).color = color;
             }
         }
     }
@@ -285,6 +286,18 @@ public class NoteColorPicker : MonoBehaviour
         return null;
     }
 
+    private Image GetButtonImage(string name)
+    {
+        foreach (Image obj in noteButtons.GetComponentsInChildren<Image>())
+        {
+            if (obj.gameObject.activeSelf && obj.transform.name == name)
+            {
+                return obj;
+            }
+        }
+        return null;
+    }
+
     private float GetNewXPos(int initPos)
     {
         return initPos * buttonXSize;
@@ -339,6 +352,11 @@ public class NoteColorPicker : MonoBehaviour
             {
                 obj.sharedMaterial.color = defObj.sharedMaterial.color;
                 obj.gameObject.transform.localPosition = defObj.gameObject.transform.localPosition;
+                GetButtonImage(obj.name).color = obj.sharedMaterial.color;
+                if (obj.name != "Kick")
+                {
+                    GetInputField(obj.name).text = Mathf.RoundToInt(obj.gameObject.transform.localPosition.x).ToString();
+                }
             }
         }
     }
