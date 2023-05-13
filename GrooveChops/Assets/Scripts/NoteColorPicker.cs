@@ -12,17 +12,33 @@ public class NoteColorPicker : MonoBehaviour
     GameObject colorPicker;
 
     [SerializeField]
-    GameObject hitLine;
+    GameObject NoteConfigHitLine;
 
     [SerializeField]
-    GameObject hitLineDefaults;
+    GameObject DrumConfigHitLine;
+
+    [SerializeField]
+    GameObject noteHitLineDefaults;
+    [SerializeField]
+    GameObject drumHitLineDefaults;
 
     [SerializeField]
     GameObject noteButtons;
 
+    [SerializeField]
+    Toggle HighMid;
+    [SerializeField]
+    Toggle LowMid;
+    [SerializeField]
+    Toggle RightCrash;
+    [SerializeField]
+    Toggle China;
+
     [HideInInspector]
     public GameObject hoveredButton;
     private TMP_InputField changingField;
+
+    private float buttonXSize;
 
     // Start is called before the first frame update
     void Start()
@@ -71,13 +87,81 @@ public class NoteColorPicker : MonoBehaviour
         }
     }
 
+    public void AdjustSize()
+    {
+        int optionalDrums = 0;
+        List<string> removedDrums = new List<string>();
+        if (HighMid.isOn)
+        {
+            optionalDrums++;
+        }
+        else
+        {
+            removedDrums.Add("Tom1");
+        }
+        if (LowMid.isOn)
+        {
+            optionalDrums++;
+        }
+        else
+        {
+            removedDrums.Add("Tom2");
+        }
+        if (RightCrash.isOn)
+        {
+            optionalDrums++;
+        }
+        else
+        {
+            removedDrums.Add("RightCrash");
+        }
+        if (China.isOn)
+        {
+            optionalDrums++;
+        }
+        else
+        {
+            removedDrums.Add("China");
+        }
+        int currentDrums = 5 + optionalDrums;
+        float noteSize = 9 / (float)currentDrums;
+        foreach (MeshRenderer obj in DrumConfigHitLine.GetComponentsInChildren<MeshRenderer>())
+        {
+            if (removedDrums.Contains(obj.name)) 
+            {
+                obj.gameObject.SetActive(false);
+                continue;
+            }
+            else
+            {
+                obj.gameObject.SetActive(true);
+            }
+            if (obj.gameObject.activeSelf && !obj.name.Contains("Kick"))
+            {
+                Vector3 newScale = obj.transform.localScale;
+                newScale.x = noteSize;
+                obj.transform.localScale = newScale;
+            }
+        }
+    }
+
+    public void LoadSize()
+    {
+
+    }
+
+    public void SaveSize()
+    {
+
+    }
+
     public void LoadColors()
     {
-        if (PlayerPrefs.GetInt("SaveDataExists") == 0)
+        if (PlayerPrefs.GetInt("NotePickerSaveDataExists") == 0)
         {
             CreateSaveData();
         }
-        foreach (MeshRenderer obj in hitLine.GetComponentsInChildren<MeshRenderer>())
+        foreach (MeshRenderer obj in NoteConfigHitLine.GetComponentsInChildren<MeshRenderer>())
         {
             if (obj.gameObject.activeSelf)
             {
@@ -128,7 +212,7 @@ public class NoteColorPicker : MonoBehaviour
                 enteredLoc = -4;
             }
             float oldLoc = -99;
-            foreach (Transform obj in hitLine.GetComponentsInChildren<Transform>())
+            foreach (Transform obj in NoteConfigHitLine.GetComponentsInChildren<Transform>())
             {
                 if (obj.gameObject.activeSelf)
                 {
@@ -144,7 +228,7 @@ public class NoteColorPicker : MonoBehaviour
             }
             if (oldLoc != -99)
             {
-                foreach (Transform obj in hitLine.GetComponentsInChildren<Transform>())
+                foreach (Transform obj in NoteConfigHitLine.GetComponentsInChildren<Transform>())
                 {
                     if (obj.gameObject.activeSelf)
                     {
@@ -167,7 +251,7 @@ public class NoteColorPicker : MonoBehaviour
 
     private GameObject GetHitLineObj(string name)
     {
-        foreach (Transform obj in hitLine.GetComponentsInChildren<Transform>())
+        foreach (Transform obj in NoteConfigHitLine.GetComponentsInChildren<Transform>())
         {
             if (obj.gameObject.activeSelf && obj.name == name)
             {
@@ -201,9 +285,14 @@ public class NoteColorPicker : MonoBehaviour
         return null;
     }
 
+    private float GetNewXPos(int initPos)
+    {
+        return initPos * buttonXSize;
+    }
+
     private void UpdateHitLineColor(string name, Color color)
     {
-        foreach (Transform obj in hitLine.GetComponentsInChildren<Transform>())
+        foreach (Transform obj in NoteConfigHitLine.GetComponentsInChildren<Transform>())
         {
             if (obj.gameObject.activeSelf && obj.name == name)
             {
@@ -214,7 +303,7 @@ public class NoteColorPicker : MonoBehaviour
 
     public void SaveColors()
     {
-        foreach (MeshRenderer obj in hitLine.GetComponentsInChildren<MeshRenderer>())
+        foreach (MeshRenderer obj in NoteConfigHitLine.GetComponentsInChildren<MeshRenderer>())
         {
             if (obj.gameObject.activeSelf)
             {
@@ -239,8 +328,8 @@ public class NoteColorPicker : MonoBehaviour
 
     public void ResetProperties()
     {
-        MeshRenderer[] hitLineObjs = hitLine.GetComponentsInChildren<MeshRenderer>();
-        MeshRenderer[] defaultObjs = hitLineDefaults.GetComponentsInChildren<MeshRenderer>();
+        MeshRenderer[] hitLineObjs = NoteConfigHitLine.GetComponentsInChildren<MeshRenderer>();
+        MeshRenderer[] defaultObjs = noteHitLineDefaults.GetComponentsInChildren<MeshRenderer>();
         for (int i = 0; i < hitLineObjs.Length; i++)
         {
             MeshRenderer obj = hitLineObjs[i];

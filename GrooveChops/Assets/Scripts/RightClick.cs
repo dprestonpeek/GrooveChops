@@ -26,13 +26,26 @@ public class RightClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
             }
             else
             {
-                leftClick.Invoke();
+                if (leftClick != null)
+                {
+                    leftClick.Invoke();
+                }
             }
         }
         else if (eventData.button == PointerEventData.InputButton.Middle)
-            middleClick.Invoke();
+        {
+            if (middleClick != null)
+            {
+                middleClick.Invoke();
+            }
+        }
         else if (eventData.button == PointerEventData.InputButton.Right)
-            rightClick.Invoke();
+        {
+            if (rightClick != null)
+            {
+                rightClick.Invoke();
+            }
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
