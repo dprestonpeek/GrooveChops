@@ -64,6 +64,12 @@ public class MidiManager : MonoBehaviour
         }
     }
 
+    public float GetProgress()
+    {
+        float progress = (float)player.MPTK_TickCurrent / (float)player.MPTK_TickLastNote;
+        return progress;
+    }
+
     public void NoteEvent()
     {
         foreach (MPTKEvent ev in mptkEvents)
