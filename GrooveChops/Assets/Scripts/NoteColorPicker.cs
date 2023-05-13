@@ -157,7 +157,7 @@ public class NoteColorPicker : MonoBehaviour
 
     public void LoadColors()
     {
-        if (PlayerPrefs.GetInt("NotePickerSaveDataExists") == 0)
+        if (PlayerPrefs.GetInt("SaveDataExists") == 0)
         {
             CreateSaveData();
         }
@@ -343,7 +343,7 @@ public class NoteColorPicker : MonoBehaviour
         }
     }
 
-    private void CreateSaveData()
+    public void CreateSaveData()
     {
         SaveColors();
         SaveOrder();

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -143,6 +144,10 @@ public class NoteSpawner : MonoBehaviour
 
     public void LoadNoteProperties()
     {
+        if (PlayerPrefs.GetInt("SaveDataExists") == 0)
+        {
+            CreateSaveData();
+        }
         foreach (MeshRenderer obj in hitLine.GetComponentsInChildren<MeshRenderer>())
         {
             if (obj.gameObject.activeSelf)
@@ -175,6 +180,38 @@ public class NoteSpawner : MonoBehaviour
     public void SpawnClick()
     {
         Instantiate(click, transform);
+    }
+
+    public void CreateSaveData()
+    {
+        SaveColors();
+        SaveOrder();
+        PlayerPrefs.SetInt("SaveDataExists", 1);
+    }
+
+    public void SaveColors()
+    {
+        foreach (MeshRenderer obj in hitLine.GetComponentsInChildren<MeshRenderer>())
+        {
+            if (obj.gameObject.activeSelf)
+            {
+                PlayerPrefs.SetFloat(obj.name + "-Color-R", obj.sharedMaterial.color.r);
+                PlayerPrefs.SetFloat(obj.name + "-Color-G", obj.sharedMaterial.color.g);
+                PlayerPrefs.SetFloat(obj.name + "-Color-B", obj.sharedMaterial.color.b);
+                PlayerPrefs.SetFloat(obj.name + "-Color-A", obj.sharedMaterial.color.a);
+            }
+        }
+    }
+
+    public void SaveOrder()
+    {
+        foreach (MeshRenderer obj in hitLine.GetComponentsInChildren<MeshRenderer>())
+        {
+            if (obj.gameObject.activeSelf)
+            {
+                PlayerPrefs.SetFloat(obj.transform.name + "-Pos", obj.transform.localPosition.x);
+            }
+        }
     }
 
     private void SpawnNote(GameObject noteObj, int velocity)
