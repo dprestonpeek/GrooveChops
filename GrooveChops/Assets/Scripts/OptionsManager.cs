@@ -77,4 +77,9 @@ public class OptionsManager : MonoBehaviour
         QualitySettings.SetQualityLevel(int.Parse(qualityValue.text));
         PlayerPrefs.SetInt("Quality", qualityIndex);
     }
+
+    public void ChangeKeyBinding()
+    {
+
+    }
 }
