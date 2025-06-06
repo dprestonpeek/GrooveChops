@@ -69,11 +69,6 @@ public class Library : MonoBehaviour
         return library;
     }
 
-    //public Song GetSongFromInfo()
-    //{
-
-    //}
-
     public void RefreshLibrary()
     {
         library = new List<SongInfo>();

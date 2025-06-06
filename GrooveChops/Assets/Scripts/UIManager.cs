@@ -27,17 +27,6 @@ public class UIManager : MonoBehaviour
         Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void UpdateInfo(string infoName)
-    {
-
-    }
-
     public void ShowErrorWindow(string errorMsg)
     {
         errorWindowText.text = errorMsg;

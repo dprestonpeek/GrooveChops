@@ -5,11 +5,6 @@ using UnityEngine;
 
 public class LibraryPick : Library
 {
-    private void Update()
-    {
-        
-    }
-
     public override void DisplayLibrary()
     {
         ClearLibraryList();

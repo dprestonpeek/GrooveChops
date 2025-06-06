@@ -23,12 +23,6 @@ public class QuickplayManager : MonoBehaviour
         Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PickSong(Song pickedSong)
     {
         AddSongButton(pickedSong);

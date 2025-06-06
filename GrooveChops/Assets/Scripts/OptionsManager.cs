@@ -30,12 +30,6 @@ public class OptionsManager : MonoBehaviour
         qualityNames = QualitySettings.names;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void LoadVideoOptionValues()
     {
         fullScreenValue.isOn = Screen.fullScreen;

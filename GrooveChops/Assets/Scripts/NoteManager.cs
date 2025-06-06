@@ -30,21 +30,6 @@ public class NoteManager : MonoBehaviour
         InitInstCounter();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void InitInstCounter()
-    {
-        instCounter = new Dictionary<int, int>();
-        for (int i = 0; i < 16; i++)
-        {
-            instCounter.Add(i, 0);
-        }
-    }
-
     public void Tick()
     {
         if (animate)
@@ -77,6 +62,15 @@ public class NoteManager : MonoBehaviour
             {
                 spawner.DetermineNote(instEvent.note, instEvent.velocity);
             }
+        }
+    }
+
+    private void InitInstCounter()
+    {
+        instCounter = new Dictionary<int, int>();
+        for (int i = 0; i < 16; i++)
+        {
+            instCounter.Add(i, 0);
         }
     }
 }

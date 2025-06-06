@@ -16,18 +16,9 @@ public class EndSongManager : MonoBehaviour
     void Start()
     {
         Song currentSong = GameManager.Instance.currentSong;
-        List<Song> gigSongs = GameManager.Instance.pickedSongs;
         if (SongsObj)
         {
-            for (int i = 0; i < gigSongs.Count; i++)
-            {
-                GameObject spawnedSong = Instantiate(Library.Instance.songPrefab, Vector3.zero, Quaternion.identity, SongsObj.transform);
-                spawnedSong.GetComponentInChildren<RightClick>().enabled = false;
-                Vector3 newPos = Vector3.zero;
-                newPos.y = i * Library.Instance.songSpacing * -1;
-                spawnedSong.transform.localPosition = newPos;
-                spawnedSong.GetComponentInChildren<TMP_Text>().text = gigSongs[i].Artist + " - " + gigSongs[i].Name;
-            }
+            ShowEndSongMenu();
         }
         if (SongInfo)
         {
@@ -65,5 +56,19 @@ public class EndSongManager : MonoBehaviour
     public void MainMenu()
     {
         GameManager.Instance.MainMenu();
+    }
+
+    private void ShowEndSongMenu()
+    {
+        List<Song> gigSongs = GameManager.Instance.pickedSongs;
+        for (int i = 0; i < gigSongs.Count; i++)
+        {
+            GameObject spawnedSong = Instantiate(Library.Instance.songPrefab, Vector3.zero, Quaternion.identity, SongsObj.transform);
+            spawnedSong.GetComponentInChildren<RightClick>().enabled = false;
+            Vector3 newPos = Vector3.zero;
+            newPos.y = i * Library.Instance.songSpacing * -1;
+            spawnedSong.transform.localPosition = newPos;
+            spawnedSong.GetComponentInChildren<TMP_Text>().text = gigSongs[i].Artist + " - " + gigSongs[i].Name;
+        }
     }
 }

@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class ScrollViewLimit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +13,7 @@ public class ScrollViewLimit : MonoBehaviour
         transform.localPosition = newPos;
     }
 
-    float CalcMaxBottom()
+    private float CalcMaxBottom()
     {
         float maxBottom = 0;
         foreach (Song child in GetComponentsInChildren<Song>())

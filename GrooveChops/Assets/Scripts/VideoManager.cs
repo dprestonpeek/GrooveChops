@@ -21,17 +21,10 @@ public class VideoManager : MonoBehaviour
 
     public bool playVideo = false;
 
-    string mp4Path = "";
     // Start is called before the first frame update
     void Start()
     {
         Instance = this;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void ActivateVideo(string videoPath)

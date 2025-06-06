@@ -51,19 +51,6 @@ public class MidiManager : MonoBehaviour
         }
     }
 
-    private void NotesToPlay(List<MPTKEvent> events)
-    {
-        foreach (MPTKEvent ev in events)
-        {
-            if (ev.Command == MPTKCommand.NoteOn)
-            {
-                mptkEvents.Add(ev);
-                InstrumentEvent info = new InstrumentEvent(ev.Channel, ev.Value, ev.Velocity);
-                printer.MidiNoteEvent(info);
-            }
-        }
-    }
-
     public float GetProgress()
     {
         float progress = (float)player.MPTK_TickCurrent / (float)player.MPTK_TickLastNote;
@@ -102,6 +89,19 @@ public class MidiManager : MonoBehaviour
         if (midi != null)
         {
             //UIManager.Instance.UpdateMidi(player.MPTK_MidiName);
+        }
+    }
+
+    private void NotesToPlay(List<MPTKEvent> events)
+    {
+        foreach (MPTKEvent ev in events)
+        {
+            if (ev.Command == MPTKCommand.NoteOn)
+            {
+                mptkEvents.Add(ev);
+                InstrumentEvent info = new InstrumentEvent(ev.Channel, ev.Value, ev.Velocity);
+                printer.MidiNoteEvent(info);
+            }
         }
     }
 }

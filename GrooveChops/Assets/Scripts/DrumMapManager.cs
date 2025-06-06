@@ -23,12 +23,6 @@ public class DrumMapManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void LoadDrumMapFromPath(string path)
     {
         mapPath = path;

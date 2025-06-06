@@ -21,7 +21,7 @@ public class Note : MonoBehaviour
         MoveNote();
     }
 
-    void MoveNote()
+    private void MoveNote()
     {
         Vector3 newPos = transform.position;
         newPos.z -= NoteManager.Instance.speed * Time.deltaTime;

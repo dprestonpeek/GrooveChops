@@ -48,18 +48,6 @@ public class NoteSpawner : MonoBehaviour
 
     List<SpawnedNote> spawnedNotes = new List<SpawnedNote>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void DetermineNote(int midiNote, int velocity)
     {
         if (Tracks.Drums.IsNote(midiNote, Tracks.DrumMap.Kick))

@@ -18,12 +18,6 @@ public class SongManager : MonoBehaviour
         libraryPath = Path.Combine(Application.persistentDataPath, "SongLibrary");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void AddNewSong(string songLocation)
     {
         string midiPath = "";

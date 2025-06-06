@@ -22,12 +22,6 @@ public class GameManager : MonoBehaviour
         pickedSongs = new List<Song>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void StartGame()
     {
         AudioManager.Instance.PlayDelayed();
@@ -85,11 +79,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
-
-    //public void PickSong(Song song)
-    //{
-    //    pickedSongs = song;
-    //}
 
     public void Exit()
     {

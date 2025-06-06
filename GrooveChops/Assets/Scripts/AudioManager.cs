@@ -27,32 +27,6 @@ public class AudioManager : MonoBehaviour
         Instance = this;
     }
 
-    private void Awake()
-    {
-
-    }
-
-    public void LoadAudioFromPath(string path)
-    {
-        mp3Path = path;
-        StartCoroutine(LoadAudio());
-    }
-
-    private IEnumerator LoadAudio()
-    {
-        WWW request = GetAudioFromFile(mp3Path);
-        yield return request;
-
-        audioClip = request.GetAudioClip();
-        audioClip.name = Path.GetFileName(mp3Path);
-        audioSource.clip = audioClip;
-        if (audioSource.clip != null)
-        {
-            //UIManager.Instance.UpdateMp3(audioClip.name);
-            UIManager.Instance.Mp3OK = true;
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -74,6 +48,12 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void LoadAudioFromPath(string path)
+    {
+        mp3Path = path;
+        StartCoroutine(LoadAudio());
+    }
+
     public void PlayDelayed()
     {
         Invoke("StopIntro", 7);
@@ -90,11 +70,28 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private IEnumerator LoadAudio()
+    {
+        // TODO: Swap to UWR instead of WWW
+        WWW request = GetAudioFromFile(mp3Path);
+        yield return request;
+
+        audioClip = request.GetAudioClip();
+        audioClip.name = Path.GetFileName(mp3Path);
+        audioSource.clip = audioClip;
+        if (audioSource.clip != null)
+        {
+            //UIManager.Instance.UpdateMp3(audioClip.name);
+            UIManager.Instance.Mp3OK = true;
+        }
+    }
+
     private void StopIntro()
     {
         VideoManager.Instance.StopIntro();
     }
 
+    // TODO: Swap to UWR instead of WWW
     private WWW GetAudioFromFile(string path)
     {
         string audioToLoad = path;

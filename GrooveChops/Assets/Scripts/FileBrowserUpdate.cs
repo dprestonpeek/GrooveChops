@@ -10,6 +10,12 @@ using UnityEngine.UI;
 
 public class FileBrowserUpdate : MonoBehaviour
 {
+    public static FileBrowserUpdate midiInstance;
+    public static FileBrowserUpdate mp3Instance;
+    public static FileBrowserUpdate mapInstance;
+    public static FileBrowserUpdate infoInstance;
+    public static FileBrowserUpdate importInstance;
+
     [SerializeField]
     TMP_Text filename;
     [SerializeField]
@@ -31,12 +37,6 @@ public class FileBrowserUpdate : MonoBehaviour
     bool infoFileBrowser = false;
     [SerializeField]
     bool importFileBrowser = false;
-
-    public static FileBrowserUpdate midiInstance;
-    public static FileBrowserUpdate mp3Instance;
-    public static FileBrowserUpdate mapInstance;
-    public static FileBrowserUpdate infoInstance;
-    public static FileBrowserUpdate importInstance;
 
     private void Start()
     {
@@ -79,10 +79,6 @@ public class FileBrowserUpdate : MonoBehaviour
                         songImport.SetImportFiles(paths);
                     }
                 }
-                //if (filename)
-                //{
-                //    filename.text = Path.GetFileName(paths);
-                //}
             });
         }
         else
@@ -90,7 +86,6 @@ public class FileBrowserUpdate : MonoBehaviour
             new FileBrowser().OpenFileBrowser(bp, path =>
             {
                 //Load image from local path with UWR
-                //StartCoroutine(LoadImage(path));
                 if (midiBrowser)
                 {
                     midiManager.LoadMidiFromPath(path);

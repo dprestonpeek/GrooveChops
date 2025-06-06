@@ -46,12 +46,6 @@ public class NoteColorPicker : MonoBehaviour
         Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OpenPicker()
     {
         if (hoveredButton)
@@ -143,16 +137,6 @@ public class NoteColorPicker : MonoBehaviour
                 obj.transform.localScale = newScale;
             }
         }
-    }
-
-    public void LoadSize()
-    {
-
-    }
-
-    public void SaveSize()
-    {
-
     }
 
     public void LoadColors()
@@ -250,6 +234,60 @@ public class NoteColorPicker : MonoBehaviour
         }
     }
 
+    public void SaveColors()
+    {
+        foreach (MeshRenderer obj in NoteConfigHitLine.GetComponentsInChildren<MeshRenderer>())
+        {
+            if (obj.gameObject.activeSelf)
+            {
+                PlayerPrefs.SetFloat(obj.name + "-Color-R", obj.sharedMaterial.color.r);
+                PlayerPrefs.SetFloat(obj.name + "-Color-G", obj.sharedMaterial.color.g);
+                PlayerPrefs.SetFloat(obj.name + "-Color-B", obj.sharedMaterial.color.b);
+                PlayerPrefs.SetFloat(obj.name + "-Color-A", obj.sharedMaterial.color.a);
+            }
+        }
+    }
+
+    public void SaveOrder()
+    {
+        foreach (TMP_InputField field in noteButtons.GetComponentsInChildren<TMP_InputField>())
+        {
+            if (field.text != "")
+            {
+                PlayerPrefs.SetFloat(field.transform.parent.name + "-Pos", int.Parse(field.text));
+            }
+        }
+    }
+
+    public void ResetProperties()
+    {
+        MeshRenderer[] hitLineObjs = NoteConfigHitLine.GetComponentsInChildren<MeshRenderer>();
+        MeshRenderer[] defaultObjs = noteHitLineDefaults.GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < hitLineObjs.Length; i++)
+        {
+            MeshRenderer obj = hitLineObjs[i];
+            MeshRenderer defObj = defaultObjs[i];
+
+            if (obj.gameObject.activeSelf)
+            {
+                obj.sharedMaterial.color = defObj.sharedMaterial.color;
+                obj.gameObject.transform.localPosition = defObj.gameObject.transform.localPosition;
+                GetButtonImage(obj.name).color = obj.sharedMaterial.color;
+                if (obj.name != "Kick")
+                {
+                    GetInputField(obj.name).text = Mathf.RoundToInt(obj.gameObject.transform.localPosition.x).ToString();
+                }
+            }
+        }
+    }
+
+    public void CreateSaveData()
+    {
+        SaveColors();
+        SaveOrder();
+        PlayerPrefs.SetInt("SaveDataExists", 1);
+    }
+
     private GameObject GetHitLineObj(string name)
     {
         foreach (Transform obj in NoteConfigHitLine.GetComponentsInChildren<Transform>())
@@ -312,59 +350,5 @@ public class NoteColorPicker : MonoBehaviour
                 obj.GetComponent<MeshRenderer>().sharedMaterial.color = color;
             }
         }
-    }
-
-    public void SaveColors()
-    {
-        foreach (MeshRenderer obj in NoteConfigHitLine.GetComponentsInChildren<MeshRenderer>())
-        {
-            if (obj.gameObject.activeSelf)
-            {
-                PlayerPrefs.SetFloat(obj.name + "-Color-R", obj.sharedMaterial.color.r);
-                PlayerPrefs.SetFloat(obj.name + "-Color-G", obj.sharedMaterial.color.g);
-                PlayerPrefs.SetFloat(obj.name + "-Color-B", obj.sharedMaterial.color.b);
-                PlayerPrefs.SetFloat(obj.name + "-Color-A", obj.sharedMaterial.color.a);
-            }
-        }
-    }
-
-    public void SaveOrder()
-    {
-        foreach (TMP_InputField field in noteButtons.GetComponentsInChildren<TMP_InputField>())
-        {
-            if (field.text != "")
-            {
-                PlayerPrefs.SetFloat(field.transform.parent.name + "-Pos", int.Parse(field.text));
-            }
-        }
-    }
-
-    public void ResetProperties()
-    {
-        MeshRenderer[] hitLineObjs = NoteConfigHitLine.GetComponentsInChildren<MeshRenderer>();
-        MeshRenderer[] defaultObjs = noteHitLineDefaults.GetComponentsInChildren<MeshRenderer>();
-        for (int i = 0; i < hitLineObjs.Length; i++)
-        {
-            MeshRenderer obj = hitLineObjs[i];
-            MeshRenderer defObj = defaultObjs[i];
-
-            if (obj.gameObject.activeSelf)
-            {
-                obj.sharedMaterial.color = defObj.sharedMaterial.color;
-                obj.gameObject.transform.localPosition = defObj.gameObject.transform.localPosition;
-                GetButtonImage(obj.name).color = obj.sharedMaterial.color;
-                if (obj.name != "Kick")
-                {
-                    GetInputField(obj.name).text = Mathf.RoundToInt(obj.gameObject.transform.localPosition.x).ToString();
-                }
-            }
-        }
-    }
-
-    public void CreateSaveData()
-    {
-        SaveColors();
-        SaveOrder();
-        PlayerPrefs.SetInt("SaveDataExists", 1);
     }
 }
